@@ -1,71 +1,10 @@
-# WWWavWriter
+//
+//  ViewController.swift
+//  Example
+//
+//  Created by William.Weng on 2025/10/29.
+//
 
-A lightweight Swift Package for wrapping raw PCM or float audio data into WAV files.
-
-## Features
-
-- Pure Swift + Foundation
-- Supports PCM integer: 8 / 16 / 24 / 32-bit
-- Supports IEEE float: 32 / 64-bit
-- Supports mono, stereo, and multichannel
-- Automatically uses WAVE_FORMAT_EXTENSIBLE when needed
-- Stateless API, suitable for concurrent use
-
-## Installation
-
-### Swift Package Manager
-
-```swift
-.package(url: "https://github.com/William-Weng/WWWavWriter.git", from: "1.0.0")
-```
-
-## Usage
-
-### Int16 PCM samples to WAV
-
-```swift
-import WWWavWriter
-
-let samples: [Int16] = [0, 1000, -1000, 2000, -2000]
-let wavData = try WWWavWriter.makePCM16WavData(
-    samples: samples,
-    sampleRate: 16_000,
-    channels: 1
-)
-```
-
-### Float32 samples to WAV
-
-```swift
-import WWWavWriter
-
-let samples: [Float] = [0.0, 0.25, -0.25, 0.5]
-let pcmData = WWWavWriter.dataFromFloat32Samples(samples)
-let wavData = try WWWavWriter.makeFloat32WavData(
-    pcmData: pcmData,
-    sampleRate: 48_000,
-    channels: 1
-)
-```
-
-### Raw data with custom config
-
-```swift
-import WWWavWriter
-
-let config = WWWavWriter.Config(
-    sampleRate: 48_000,
-    channels: 2,
-    bitsPerSample: 24,
-    audioFormat: .pcmInteger
-)
-
-let wavData = try WWWavWriter.makeWavData(audioData: pcmData, config: config)
-```
-
-## Demo
-
-```swift
 import UIKit
 import WWWavWriter
 
@@ -150,16 +89,3 @@ private extension ViewController {
         URL.documentsDirectory.appending(path: fileName)
     }
 }
-```
-
-This will generate:
-
-- `demo-int16.wav`
-- `demo-float32.wav`
-- `demo-rawdata.wav`
-
-## Notes
-
-- Input audio data must already match the declared format.
-- Stereo and multichannel data must be interleaved.
-- This package wraps audio into WAV; it does not resample or convert sample formats.
