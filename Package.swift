@@ -12,7 +12,7 @@ let package = Package(
         .library(name: "WWWavWriter", targets: ["WWWavWriter"]),
     ],
     targets: [
-        .target(name: "WWWavWriter"),
+        .target(name: "WWWavWriter", resources: [.copy("Privacy")]),
     ],
     swiftLanguageVersions: [
         .v5

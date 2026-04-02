@@ -1,0 +1,15 @@
+{
+  "originHash" : "262ee568d816325fdfdadda62787c5c83c0547e6f45fa5996f05b01703ef22a2",
+  "pins" : [
+    {
+      "identity" : "wwwavwriter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWWavWriter",
+      "state" : {
+        "revision" : "b2b7c061a2de78ad628d6d22be8da39d4fcb82c0",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
