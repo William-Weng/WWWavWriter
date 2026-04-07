@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		817A166C2F7E58E100E6692E /* WWWavWriter in Frameworks */ = {isa = PBXBuildFile; productRef = 817A166B2F7E58E100E6692E /* WWWavWriter */; };
+		817CF2FD2F8497A500E39F65 /* WWWavWriter in Frameworks */ = {isa = PBXBuildFile; productRef = 817CF2FC2F8497A500E39F65 /* WWWavWriter */; };
+		817CF3002F84EA5000E39F65 /* WWWavWriter in Frameworks */ = {isa = PBXBuildFile; productRef = 817CF2FF2F84EA5000E39F65 /* WWWavWriter */; };
 		81EFEEB22F7E60EB008E50B3 /* WWWavWriter in Frameworks */ = {isa = PBXBuildFile; productRef = 81EFEEB12F7E60EB008E50B3 /* WWWavWriter */; };
-		81EFEEB52F7E6117008E50B3 /* WWWavWriter in Frameworks */ = {isa = PBXBuildFile; productRef = 81EFEEB42F7E6117008E50B3 /* WWWavWriter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81EFEEB52F7E6117008E50B3 /* WWWavWriter in Frameworks */,
+				817CF3002F84EA5000E39F65 /* WWWavWriter in Frameworks */,
+				817CF2FD2F8497A500E39F65 /* WWWavWriter in Frameworks */,
 				81EFEEB22F7E60EB008E50B3 /* WWWavWriter in Frameworks */,
 				817A166C2F7E58E100E6692E /* WWWavWriter in Frameworks */,
 			);
@@ -89,7 +91,8 @@
 			packageProductDependencies = (
 				817A166B2F7E58E100E6692E /* WWWavWriter */,
 				81EFEEB12F7E60EB008E50B3 /* WWWavWriter */,
-				81EFEEB42F7E6117008E50B3 /* WWWavWriter */,
+				817CF2FC2F8497A500E39F65 /* WWWavWriter */,
+				817CF2FF2F84EA5000E39F65 /* WWWavWriter */,
 			);
 			productName = Example;
 			productReference = 817EE1FE2EB1FA050036B57C /* Example.app */;
@@ -120,7 +123,7 @@
 			mainGroup = 817EE1F52EB1FA050036B57C;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				81EFEEB32F7E6117008E50B3 /* XCRemoteSwiftPackageReference "WWWavWriter" */,
+				817CF2FE2F84EA5000E39F65 /* XCRemoteSwiftPackageReference "WWWavWriter" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 817EE1FF2EB1FA050036B57C /* Products */;
@@ -364,12 +367,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		81EFEEB32F7E6117008E50B3 /* XCRemoteSwiftPackageReference "WWWavWriter" */ = {
+		817CF2FE2F84EA5000E39F65 /* XCRemoteSwiftPackageReference "WWWavWriter" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWWavWriter";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -379,13 +382,17 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = WWWavWriter;
 		};
-		81EFEEB12F7E60EB008E50B3 /* WWWavWriter */ = {
+		817CF2FC2F8497A500E39F65 /* WWWavWriter */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WWWavWriter;
 		};
-		81EFEEB42F7E6117008E50B3 /* WWWavWriter */ = {
+		817CF2FF2F84EA5000E39F65 /* WWWavWriter */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 81EFEEB32F7E6117008E50B3 /* XCRemoteSwiftPackageReference "WWWavWriter" */;
+			package = 817CF2FE2F84EA5000E39F65 /* XCRemoteSwiftPackageReference "WWWavWriter" */;
+			productName = WWWavWriter;
+		};
+		81EFEEB12F7E60EB008E50B3 /* WWWavWriter */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = WWWavWriter;
 		};
 /* End XCSwiftPackageProductDependency section */
