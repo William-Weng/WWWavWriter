@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWWavWriter",
       "state" : {
-        "revision" : "b2b7c061a2de78ad628d6d22be8da39d4fcb82c0",
-        "version" : "1.0.0"
+        "revision" : "503304723a6d97698294d634b1785fdc4cd7bc85",
+        "version" : "1.1.0"
       }
     }
   ],
